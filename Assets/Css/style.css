@@ -45,7 +45,7 @@ nav{
 
     display: flex;
     list-style: none;
-    gap: 3.5em;
+    gap: 5em;
     
 }
 
@@ -70,6 +70,7 @@ nav{
     justify-content: center;
     position: absolute;
     right: 0;   
+    
 }
 
 .bandeiras-imgs{
@@ -77,27 +78,30 @@ nav{
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 1em;
+    gap: 3em;
+    
 }
 
 .bandeiras-imgs img{
 
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 /*  *************** FOTO DO PRESIDENTE E VICE E BORDEL ****************/
 
 .container-bordel{
 
+    position: relative;
+    top: 15em;
     width: 100%;
     height: 30em;
     background-color: #FFBC27;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    top: 25%;
+
     
 }
 
@@ -110,7 +114,7 @@ nav{
 }
 
 .frase-bordel{
-    width: 80%;
+    width: 100%;
     background-color: violet;
 }
 
@@ -118,4 +122,349 @@ nav{
     width: 100%;
     height: 2em;
     background-color: aqua;
+}
+
+/*  *************** SOBRE NÓS ****************/
+.sobre-nos{
+
+    position: relative;
+    top: 20em;
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 3em;
+    padding: 2em;
+
+}
+
+.sobre-nos h1{
+    font-size: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    
+}
+
+
+.text-sobre{
+
+    width: 60%;
+    margin: 0 auto;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/*  *************** EQUIPE ****************/
+.equipe{
+
+    position: relative;
+    top: 19em;
+    width: 100%;
+    height: 60vh;
+    background-color: #009DE0;
+}
+
+/*  *************** ACÕES ****************/
+
+.acoes{
+
+    position: relative;
+    top: 15em;
+    width: auto;
+    height: 140vh;
+    background-color: #FFBC27;
+    display: flex;
+    flex-direction: column;
+    
+}
+.linha-centro{
+
+    width: 0.9em;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin: 0 auto;
+    background-color: #FFF;
+}
+
+.card-acoes-1{
+
+    width: auto;
+    position: absolute;
+    left: 15%;
+    top: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    padding: .9em;
+    border-radius: 50%;
+}
+
+main img{
+
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+.card-acoes-2{
+    
+    width: auto;
+    position: absolute;
+    top: 25em;
+    right: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    padding: .9em;
+    border-radius: 50%;
+}
+
+.card-acoes-3{
+
+    width: auto;
+    position: absolute;
+    left: 15%;
+    top: 55em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    padding: .9em;
+    border-radius: 50%;
+}
+
+/*  ***************  CADASTRO EMAIL E PROPOSTAS ****************/
+
+.propostas{
+
+    position: relative;
+    top: 16em;
+    background-image: url('/Assets/Img/png/foto_adv\ 3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    width: 100%;
+    height: auto;
+    padding: 4em;
+    display: flex;
+    align-items: center;
+}
+
+.cadastro-email{
+
+    background-color: #FFF;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.logo-form{
+
+    width: 30%;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+.elementos-form{
+
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+
+.elementos-form input{
+    width: 100%;
+    height: 3em;
+    border-radius: 8px;
+    outline: none;
+    border: none;
+    background-color: #cdcdcd96;
+    padding-left: 8px;
+}
+
+.elementos-form textarea{
+
+    outline: none;
+    width: 100%;
+    height: 12em;
+    overflow-y: auto;
+    padding: .5em;
+    font-size: .9em;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: #cdcdcd96;
+    resize: none;
+}
+
+.elementos-form button{
+
+    width: 30%;
+    padding: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #009DE0;
+    color: #FFF;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+footer{
+
+    width: 100%;
+    height: auto;
+    background-color: #009DE0;
+    position: relative;
+    top: 20em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+footer div{
+
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;   
+}
+
+footer div ul{
+
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: justify;
+
+}
+
+footer div ul a,li{
+
+    color: #FFF;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.acesso-rapido{
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1em;
+    
+
+}
+
+.acesso-rapido ul{
+
+    width: 50%;
+    margin: 0 auto;
+}
+.acesso-rapido h1{
+
+    width: 50%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    text-align: left;
+    color: #FFF;
+    font-size: 1em;
+    
+}
+
+.redes-socias{
+
+    position: fixed;
+    margin-top: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 2em;
+    background-color: #006E9D;
+    display: flex;
+    justify-content: space-around;
+}
+
+.redes-socias div img{
+
+    width: 20px;
+    height: 20px;
+}
+
+
+.insta{
+
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+.insta a{
+
+    text-decoration: none;
+    color: #FFF;
+}
+
+.tiktok{
+
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+}
+
+.tiktok a{
+
+    text-decoration: none;
+    color: #FFF;
+}
+
+/*** Testimonial ***/
+.testimonial-carousel .testimonial-item {
+    padding: 0 30px 30px 30px;
+}
+
+.testimonial-carousel .owl-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin: 0 12px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    background: var(--light);
+    border-radius: 60px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: #FFFFFF;
+    background: var(--primary);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
