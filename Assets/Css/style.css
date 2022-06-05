@@ -470,6 +470,8 @@ main img{
     padding: .3em;
     border-radius: 8px;
     outline: none;
+    color: #FFF;
+    font-weight: bold;
 }
 
 .elementos-form input::-webkit-input-placeholder{
