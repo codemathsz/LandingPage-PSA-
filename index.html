@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Partido Social Acadêmico</title>
     <link rel="stylesheet" href="Assets/Css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
 </head>
 <body>
@@ -13,7 +14,7 @@
         <header>
 
             <nav>
-                <div class="menu">
+                <div class="desktop">
                     <ul>
                         <li><a class="links" href="#">Home</a></li>
                         <li><a class="links" href="#">Quem Somos</a></li>
@@ -22,31 +23,52 @@
                     </ul>
                 </div>
                 
-                <div class="bandeiras">
-                    <div class="bandeiras-imgs">
-                        <img src="Assets/Img/png/bandeira-brasil.png" alt="bandeirqa do Brasil">
-                        <img src="Assets/Img/png/bandeira-eua.png" alt="bandeira dos Estados Unidos">
-                    </div>
-                    
-                </div>
+              
             </nav>
+
+            <nav class="mobile">
+
+                <i class="fa fa-bars"></i>
+
+               <div class="logo-mobile">
+                    <img src="Assets/Img/png/logo-white.png" alt="">
+               </div>
+
+                <ul class="linha">
+                    <div class="bandeiras">
+                        <div class="bandeiras-imgs">
+                            <img src="Assets/Img/png/bandeira-brasil.png" alt="bandeirqa do Brasil">
+                            <img src="Assets/Img/png/bandeira-eua.png" alt="bandeira dos Estados Unidos">
+                        </div>
+                        
+                    </div>
+
+                    <li><a class="links" href="#">Home</a></li>
+                    <li><a class="links" href="#">Quem Somos</a></li>
+                    <li><a class="links" href="#">Nossa Equipe</a></li>
+                    <li><a class="links" href="#">Mande suas propostas</a></li>
+                </ul>
+
+            </nav><!-- FECHANDO MOBILE -->
 
         </header>
     </section>
     <section class="container-bordel">
 
         <div class="bordel-fotos">
-
-            <div class="frase-bordel">
-
-                <h1>Bordel</h1>
-
+            
+            <div class="texto-presidente">
+                <h4>Leticia Macedo</h4>
+                <p>VOTE 12</p>
             </div>
 
             <div class="foto-presidente">
+                <img src="Assets/Img/semFundo/foto-PresidenteEVice-sfundo.png" alt="">
+            </div
 
-            </div>
+            
         </div>
+        
     </section>
     <!--  ----------------- CONTAINER BORDEL --------------------- -->
 
@@ -63,7 +85,35 @@
     <!--  --------------------- SOBRE NOS -------------------- -->
     <section class="equipe">
 
+        <div class="deputadas">
+            <div class="deputada-giovana">
 
+                <div>
+                    <img src="Assets/Img/semFundo/foto-deputada-gi-sFundo.png" alt="">
+                </div>
+
+                <div class="texto-gi">
+
+                    <h4>Giovana Del Nero</h4>
+                    <p>VOTE 1216</p>
+                </div>
+            </div>
+            
+            
+            <div class="deputada-luiza">
+
+                <div>
+                    <img src="Assets/Img/semFundo/foto-deputada-lu-sFundo.png" alt="">
+                </div>
+                
+                <div class="texto-lu">
+
+                    <h4>Luiza Zanchettin</h4>
+                    <p>VOTE 1230</p>
+                </div>
+            </div>
+
+        </div>
 
     </section>
 
@@ -92,27 +142,28 @@
     <section class="propostas">  
 
         <div class="cor-fundo"></div>
+        <div class="formulario">
+            <form action="" method="post" >
 
-        <form action="" class="cadastro-email">
+                <div class="logo-form">
+                    <img src="Assets/Img/png/logo_form.png" alt="">
+                </div>
 
-            <div class="logo-form">
-                <img src="Assets/Img/png/logo_form.png" alt="">
-            </div>
+                <div class="elementos-form">
+                    <input type="text" name="nome" id="nome" placeholder="Nome*">
 
-            <div class="elementos-form">
-                <input type="text" name="nome" id="nome" placeholder="Nome*">
+                    <input type="email" name="email" id="email"  placeholder="Email*">
 
-                <input type="email" name="email" id="email"  placeholder="Email*">
+                    <textarea name="ideias-propostas" id="ideias-propostas"  cols="30" rows="10" placeholder="O que você gostaria de melhoria na escola?"></textarea>
 
-                <textarea name="ideias-propostas" id="ideias-propostas"  cols="30" rows="10" placeholder="O que você gostaria de melhoria na escola?"></textarea>
+                    <button>Enviar</button>
+                </div>
+                
+                
+                
 
-                <button>Enviar</button>
-            </div>
-            
-            
-            
-
-        </form>
+            </form>
+        </div>
     </section>
 
     <!--  ---------------------     CABEÇALHO -------------------- -->
@@ -153,6 +204,28 @@
                 <a href="#tiktok" target="_blank">ps.partidosocial</a>
             </div>
         </div>
+        
     </footer>
+
+
+    <!--  javaScript para as listas do mobile -->
+    <script src="Assets/js/ajax-jquery.js"></script>
+    <script>
+
+        $(function () {
+
+            $('nav.mobile i').click(function () {
+
+                var clicando = $(this).parent().find('ul.linha')/*find, trazendo a lista 'estorando na tela, tambem tem o slide,' é como vai se apresentar na tela*/
+                if (clicando.is(':visible') == false) {
+                    clicando.fadeIn();
+                } else {
+
+                    clicando.fadeOut();
+                }
+            })
+        })
+
+    </script>
 </body>
 </html>
